@@ -66,20 +66,50 @@
   position: absolute;
   bottom: 0;
   height: 40vh;
+  clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  background-color: white;
+  animation: wavesTransitionShape 50s ease-in-out infinite;
+  z-index: -5;
 }
 
-.waves--svg {
-  height: 100%;
-  fill: #131217;
-  position: absolute;
+.waves__color {
   background: linear-gradient(90deg, rgba(255,33,109,1) 0%, rgba(155,33,255,1) 25%, rgba(33,212,253,1) 50%, rgba(8,174,234,1) 75%, rgba(42,245,152,1) 100%);
-  animation: infinite wavesTransition 30s;
+  height: 100%;
+  width: 400vw;
+  position: absolute;
   right: 0;
   bottom: 0;
-  z-index: -2;
+  animation: wavesTransitionColor 40s ease-in-out infinite;
 }
 
-@keyframes wavesTransition {
+@keyframes wavesTransitionShape {
+  12.5% {
+    clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+  25% {
+    clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+  37.5% {
+    clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+  50% {
+    clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+  62.5% {
+    clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+  75% {
+    clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+  87.5% {
+    clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+  100% {
+    clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes wavesTransitionColor {
   12.5% {
     right: 0vw;
   }
@@ -87,7 +117,7 @@
     right: -210vw;
   }
   37.5% {
-    right:  0vw;
+    right: 0vw;
   }
   50% {
     right: -50vw;
