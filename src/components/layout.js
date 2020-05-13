@@ -63,7 +63,7 @@ const Layout = ({ children }) => {
               width: `50%`,
             }}
           >
-            72519994
+            WhatsApp
           </a>
         </div>
         <footer>
