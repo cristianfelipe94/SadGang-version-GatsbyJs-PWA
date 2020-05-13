@@ -82,7 +82,7 @@
 }
 
 .waves--shape {
-  width: 100%;
+  width: 101%;
   background: url("../images/waving.svg");
   height: 100%;
   background-size: contain;
