@@ -57,7 +57,7 @@ const Layout = ({ children }) => {
           </a>
           <a
             className="action--call"
-            href="https://api.whatsapp.com/send?phone=72519994"
+            href="https://api.whatsapp.com/send?phone=50672519994"
             target="_blank"
             style={{
               width: `50%`,
