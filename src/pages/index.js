@@ -16,8 +16,8 @@ const IndexPage = () => {
       <SEO title="Home" />
       <div>
         <div className="head">
-          <h1 className="head__title">Streetware</h1>
-          <h2 className="head__title">Sadgang Costa Rica</h2>
+          <h1 className="head__title">Sadgang</h1>
+          <h2 className="head__title">Costa Rica Streetware</h2>
         </div>
         <ImageGirlOne galleryMovement="0vw" />
         <ImageBoyOne galleryMovement="100vw" />

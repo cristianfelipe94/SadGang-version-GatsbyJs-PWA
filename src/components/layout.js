@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Helmet>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@300&family=Pirata+One&display=swap" rel="stylesheet"/>
       </Helmet>
       <Header />
       <div className="layout--gradient">
@@ -74,9 +74,10 @@ const Layout = ({ children }) => {
           }}>Sadgang Costa Rica 2020.</p>
 
           <div className="waves">
-            <div className="waves__color"></div>
+            <div className="waves--shape"></div>
+            <div className="waves--color"></div>
           </div>
-          
+
         </footer>
       </div>
     </>
