@@ -89,27 +89,28 @@
 }
 
 .icon--touch {
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   border-radius: 50px;
   position: absolute;
-  top: 0;
+  top: 10px;
   bottom: 0;
   left: 0;
   right: 0;
-  margin: auto;
+  margin: 0 auto;
   animation: touchScreenLatency 4s infinite;
   transform: scale(1.2);
   animation-fill-mode: forwards;
+  z-index: 2;
 }
 
 .icon--touch::before {
   content: "";
   background-image: url("../images/touch-screen.svg");
-  height: 50px;
-  width: 50px;
-  left: -12px;
-  top: -5px;
+  height: 40px;
+  width: 40px;
+  left: -10px;
+  top: -3px;
   background-size: contain;
   position: absolute;
 }
@@ -255,6 +256,7 @@
   bottom: 0;
   padding: 1rem;
 }
+
 
 .head__title {
   font-family: 'Pirata One', cursive;
