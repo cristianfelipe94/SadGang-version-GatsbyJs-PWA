@@ -22,8 +22,8 @@ module.exports = {
         name: `Sadgang Clothes`,
         short_name: `Sadgang Store`,
         start_url: `/`,
-        background_color: `#131217;`,
-        theme_color: `#131217;`,
+        background_color: `#131217`,
+        theme_color: `#131217`,
         display: `minimal-ui`,
         icon: `src/images/sadgang-logo-emoji.svg`, // This path is relative to the root of the site.
       },

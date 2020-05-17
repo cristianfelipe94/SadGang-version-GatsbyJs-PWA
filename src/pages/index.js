@@ -90,7 +90,7 @@ const IndexPage = () => {
       <div>
         <div className="head">
           <h1 className="head__title">{header.headerTitle}</h1>
-          <h2 className="head__title">{header.headerMessage}</h2>
+          <p className="head__title">{header.headerMessage}</p>
         </div>
         <div className="gallery" onClick={(event) => openCloseGallery(event)} >
           <div className="gallery__panel">
