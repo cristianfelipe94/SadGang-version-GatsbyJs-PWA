@@ -19,11 +19,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `sadgang clothes`,
-        short_name: `store`,
+        name: `Sadgang Clothes`,
+        short_name: `Sadgang Store`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#131217;`,
+        theme_color: `#131217;`,
         display: `minimal-ui`,
         icon: `src/images/sadgang-logo-emoji.svg`, // This path is relative to the root of the site.
       },
