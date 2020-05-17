@@ -253,8 +253,10 @@
 .head {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 20px;
   padding: 1rem;
+  width: 100%;
+  background-color: #131217b8;
 }
 
 
@@ -270,8 +272,10 @@ h1.head__title {
 
 h2.head__title {
   font-size: 1.5rem;
-  opacity: 0.8;
+  opacity: 0.9;
   margin: 0 0 1rem 0;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 1rem;
 }
 
 .head__content {

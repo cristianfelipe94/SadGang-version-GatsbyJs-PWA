@@ -45,7 +45,7 @@ const IndexPage = () => {
           getGallery.style.left = "-100vw";
           setHeader(() => ({
             headerTitle: "Somos Comunidad",
-            headerMessage: "Creemos en crear comunidad entre clientes y emprendedores."
+            headerMessage: "Queremos crear comunidad entre clientes y emprendedores."
           }));
         }, 2000);
       } else if (windowPercentage > 50 && windowPercentage < 75) {
@@ -55,7 +55,7 @@ const IndexPage = () => {
           getGallery.style.left = "-200vw";
           setHeader(() => ({
             headerTitle: "Somos Crecimiento",
-            headerMessage: "Creamos y vendemos prendas de ropa sin estampado, para tu emprendimiento."
+            headerMessage: "Creamos y vendemos ropa sin estampado para tu emprendimiento."
           }));
         }, 2000);
       } else if (windowPercentage > 75 && windowPercentage < 100) {
@@ -65,7 +65,7 @@ const IndexPage = () => {
             imageGalleryToBeColor.classList.add("gallery__image--color-display");
             setHeader(() => ({
               headerTitle: "Somos tu Estilo",
-              headerMessage: "Buscamos la diversidad en nuestras prendas para que sean accesibles a cualquier ser."
+              headerMessage: "Buscamos la diversidad en nuestras prendas para que sean accesibles."
             }));
           }, 2500);
           getGallery.style.left = "-300vw";
