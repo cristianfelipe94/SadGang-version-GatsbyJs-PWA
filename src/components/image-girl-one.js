@@ -14,7 +14,7 @@ import "./styles.css"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const ImageGirlOne = ({galleryMovement}) => {
+const ImageGirlOne = () => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "background-girl-one.png" }) {
@@ -27,7 +27,7 @@ const ImageGirlOne = ({galleryMovement}) => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} className="background--overlapped" style={{left: `${galleryMovement}`}}/>
+  return <Img fluid={data.placeholderImage.childImageSharp.fluid} className="gallery__image gallery__image--main"/>
 }
 
 export default ImageGirlOne
