@@ -23,7 +23,7 @@ const ProductsLayout = () => {
   useEffect(() => {
     return base("Furniture")
       .select({
-        maxRecords: 10,
+        maxRecords: 5,
         fields: ["Name", "Type", "Images", "Color", "Description", "UnitCost"],
         sort: [
           {
