@@ -1,10 +1,11 @@
+.gallery--v1 {
+  position: relative;
+  overflow-x: hidden;
+}
+
 .gallery {
-  position: absolute;
   width: 100vw;
-  height: 79.2vh;
-  overflow: hidden;
-  left: 0;
-  top: 0;
+  height: 90vh;
 }
 
 .gallery__panel {
@@ -140,7 +141,21 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-x: hidden;
+}
+
+.gradient--panel {
   overflow: hidden;
+  width: 100vw;
+  position: relative;
+  height: 10px;
+}
+
+.gradient--panel--small {
+  overflow: hidden;
+  width: 100vw;
+  position: relative;
+  height: 5px;
 }
 
 .gradient--line {
@@ -183,10 +198,10 @@
 }
 
 .waves {
-  height: 25vh;
+  height: 15vh;
   width: 100vw;
   z-index: -5;
-  position: absolute;
+  position: relative;
   overflow: hidden;
   left: 0;
   bottom: 0;
@@ -212,6 +227,13 @@
   animation: animationWaving 1s linear infinite;
   position: absolute;
   top: -1px;
+}
+
+.waves--signature {
+  margin: 1rem;
+  color: black;
+  position: absolute;
+  bottom: 0;
 }
 
 @keyframes animationWaving {
@@ -295,6 +317,10 @@ p.head__title {
 
 .action--call:hover {
   background-color: #b0bec5;
+}
+
+.airtable__product {
+  padding: 2.5rem 1rem;
 }
 
 
