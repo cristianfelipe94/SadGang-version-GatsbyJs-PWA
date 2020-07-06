@@ -24,7 +24,7 @@ const ProductsLayout = () => {
     return base("Furniture")
       .select({
         maxRecords: 10,
-        fields: ["Name", "Type", "Images", "Color", "Description", "Unit cost"],
+        fields: ["Name", "Type", "Images", "Color", "Description", "UnitCost"],
         sort: [
           {
             field: "Name",
@@ -76,10 +76,10 @@ const ProductsLayout = () => {
                 <p>{baseElement.Type}</p>
                 {baseElement.Color.length
                   ? baseElement.Color.map(element => {
-                      return <span>{element}</span>
+                      return <p>{element}</p>
                     })
                   : ""}
-                <p>{baseElement.Unitcost}</p>
+                <p>{baseElement.UnitCost}</p>
               </div>
               {index !== data.length - 1 ? (
                 <div className="gradient--panel--small">
