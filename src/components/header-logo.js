@@ -18,7 +18,7 @@ const HeaderLogo = () => {
     query {
       placeholderImage: file(relativePath: { eq: "main-logo.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 1000, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }

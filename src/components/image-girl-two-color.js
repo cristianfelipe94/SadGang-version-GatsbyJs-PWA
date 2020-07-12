@@ -19,7 +19,7 @@ const ImageGirlTwoColor = () => {
     query {
       placeholderImage: file(relativePath: { eq: "background-girl-two-color.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 1000, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
