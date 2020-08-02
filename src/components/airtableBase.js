@@ -65,24 +65,49 @@ const ProductsLayout = () => {
         ? "Loading data..."
         : data.map((baseElement, index) => (
             <>
-              <div className="airtable__product">
-                <h3>{baseElement.Name}</h3>
+              <div className="airtableProduct">
+                <div className="airtableProduct__introContainer">
+                  <h3 className="airtableProduct__productTitle">{baseElement.Name}</h3>
+                  <p className="airtableProduct__productType">{baseElement.Type}</p>
+                </div>
                 {baseElement.Images.length
                   ? baseElement.Images.map(element => {
-                      return <img src={element.url}></img>
+                      return (
+                        <a 
+                        href="https://api.whatsapp.com/send?phone=50672519994"
+                        target="_blank"
+                        className="airtableProduct__productImageContainer">
+                          <img className="airtableProduct__productImage" src={element.url}></img>
+                          <div
+                            className="action--shop"
+                          >
+                            <span>Obtener más información</span>
+                          </div>
+                        </a>
+                      )
                     })
                   : ""}
-                <p>{baseElement.Description}</p>
-                <p>{baseElement.Type}</p>
-                {baseElement.Color.length
-                  ? baseElement.Color.map(element => {
-                      return <p>{element}</p>
-                    })
-                  : ""}
-                <p>{baseElement.UnitCost}</p>
+                <p className="airtableProduct__productDescription">{baseElement.Description}</p>
+                <div className="airtableProduct__colorContainer">
+                  <p>Colores disponibles:</p>
+                  {baseElement.Color.length
+                    ? baseElement.Color.map(element => {
+                        return <span className="productColor">{element}</span>
+                      })
+                    : ""}
+                </div>
+                <div className="airtableProduct__costContainer">
+                  <p>Precio:</p>
+                  <div>
+                    <span className="productCost">{baseElement.UnitCost}</span>
+                    <div className="gradient--panel--small">
+                      <span className="gradient--line" />
+                    </div>
+                  </div>
+                </div>
               </div>
               {index !== data.length - 1 ? (
-                <div className="gradient--panel--small">
+                <div className="gradient--panel--large">
                   <span className="gradient--line" />
                 </div>
               ) : (
